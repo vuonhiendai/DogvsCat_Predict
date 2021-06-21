@@ -1,0 +1,14 @@
+<header>
+<title>Dog or Cat</title>
+</header>
+<body>
+<p> Input the figure </p>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="sentFile" />
+    <input type="submit" name="submit" value="Upload" />
+    <input type ="reset" value="Reset" />
+</form>
+<p>This is a {{name}} </p>
+<p> The accurate is {{score}} </p>
+</body>
